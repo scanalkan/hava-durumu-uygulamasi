@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu - {{ .city }}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ .city }} Hava Durumu</h1>
+        <p><strong>Hava Durumu:</strong> {{ .weather }}</p>
+        <p><strong>Sıcaklık:</strong> {{ .temperature }}°C</p>
+        <p><strong>Öneri:</strong> {{ .activity }}</p>
+        <a href="/" class="button">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>

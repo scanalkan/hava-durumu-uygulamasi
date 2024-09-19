@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .title }}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ .title }}</h1>
+        <form action="/weather" method="post">
+            <input type="text" name="city" placeholder="Şehir adı girin" required>
+            <button type="submit">Hava Durumunu Göster</button>
+        </form>
+    </div>
+</body>
+</html>
